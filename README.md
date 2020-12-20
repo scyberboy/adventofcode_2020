@@ -1,2 +1,2 @@
 # adventofcode_2020
-Solutions for Advent of Code 2019 programming challenge
+Solutions for Advent of Code 2020 programming challenge

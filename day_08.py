@@ -7,9 +7,6 @@ print("my_name:", my_name)
 day_nr = re.search(r"\d+", my_name).group()
 print("day_nr:", day_nr)
 
-processed_colors_a = dict()
-processed_colors_b = dict()
-
 
 def read_input():
     _all = list()
@@ -120,14 +117,10 @@ def main():
     # print("input_data =", pprint.pformat(input_data))
 
     nr_correct = find_sol_a(input_data)
-    # print("LEN processed_colors =", len(processed_colors))
-    # print("processed_colors =", pprint.pformat(processed_colors))
     print("answer day{day_nr}({task_day}): {result}".format
           (day_nr=day_nr, task_day="a", result=nr_correct))
 
     nr_correct = find_sol_b(input_data)
-    # print("LEN processed_colors_b =", len(processed_colors_b))
-    # print("processed_colors_b =", pprint.pformat(processed_colors_b))
     print("answer day{day_nr}({task_day}): {result}".format
           (day_nr=day_nr, task_day="b", result=nr_correct))
 
